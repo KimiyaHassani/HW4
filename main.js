@@ -1,10 +1,11 @@
-let noteArray = [];
-let selectedType = "";
+let movieArray = [];
+let selectedGenre = "";
 
 // define a constructor to create note objects
-let NoteObject = function (pData, pType) {
-    this.data = pData;
-    this.type = pType;
+let MovieObject = function (movieTitle, movieYear, movieGenre) {
+    this.Title = movieTitle;
+    this.Year = movieYear;
+    this.Genre = movieGenre;
 }
 
 
@@ -13,13 +14,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     document.getElementById("buttonAdd").addEventListener("click", function () {
 
-        noteArray.push(new NoteObject(document.getElementById("note").value, selectedType));
-        console.log(noteArray);
-        document.getElementById("note").value = "";
+        movieArray.push(new MovieObject(document.getElementById("movieTitle").value, document.getElementById("movieYear").value, selectedGenre));
+        console.log(movieArray);
+        document.getElementById("movieTitle").value = "";
     });
 
     $(document).bind("change", "#select-type", function (event, ui) {
-        selectedType = document.getElementById("select-type").value;
+        selectedGenre = document.getElementById("select-type").value;
     });
 
     // page before show code *************************************************************************
@@ -40,9 +41,9 @@ function createList() {
     var myul = document.getElementById("myList");
     myul.innerHTML = '';
 
-    noteArray.forEach(function (element,) {   // use handy array forEach method
+    movieArray.forEach(function (element,) {   // use handy array forEach method
         var li = document.createElement('li');
-        li.innerHTML = element.data + ":  " + element.type;
+        li.innerHTML = element.Title + " (" + element.Year + ") " + ":  " + element.Genre;
         myul.appendChild(li);
     });
 };

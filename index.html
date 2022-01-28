@@ -8,6 +8,8 @@
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script src="main.js"></script>
+    <link rel="stylesheet" href="OrangeSunrise.css" />
+    <link rel="stylesheet" href="OrangeSunrise.min.css" />
     <link rel="stylesheet" type="text/css" href="site.css">
 
 </head>
@@ -19,8 +21,8 @@
 <!-- ================================================================================ -->
 <div data-role="page" id="home">
     <!-- header -->
-    <div data-role="header" data-theme='b'>
-        <div data-role="navbar" data-theme='b'>
+    <div data-role="header" data-theme='a'>
+        <div data-role="navbar" data-theme='a'>
             <ul>
                
                 <li><a href="#add">Add Movie </a></li>
@@ -33,16 +35,16 @@
 
 
     <!-- content -->
-    <div data-role="content" data-theme='e'>
+    <div data-role="content" data-theme='a'>
         Real application function code
     </div>
 
-
+    <img src="bg.png" alt="theater" width="375" height = "281">
 
 
     <!-- notes footer -->
-    <div data-role="footer" data-theme='b'>
-        <h3>Copyrigtht 2022 by Joe Glass , Kimiya Hassani</h3>
+    <div data-role="footer" data-theme='a'>
+        <h3>Copyright 2022 by Joe Glass , Kimiya Hassani</h3>
     </div>
 </div>
 
@@ -52,8 +54,8 @@
 
 <div data-role="page" id="add">
     <!-- header -->
-    <div data-role="header" data-theme='b'>
-        <div data-role="navbar" data-theme='b'>
+    <div data-role="header" data-theme='a'>
+        <div data-role="navbar" data-theme='a'>
             <ul>
                 <li><a href="#home">Home Page</a></li>
               
@@ -66,11 +68,11 @@
 
 
     <!-- content -->
-    <div data-role="content" data-theme='c'>
+    <div data-role="content" data-theme='a'>
         Enter Movie  Title <br />
-        <input type="text" value="" id="note" />
+        <input type="text" value="" id="movieTitle" />
         Enter Movie  year <br />
-        <input type="text" value="" id="note" />
+        <input type="text" value="" id="movieYear" />
         
         <label for="select-type">Select a Type</label>
         <select name="select-type" id="select-type">
@@ -87,8 +89,8 @@
 
 
     <!-- notes footer -->
-    <div data-role="footer" data-theme='b'>
-        <h3>Copyrigtht 2022 by Joe Glass , Kimiya Hassani</h3>
+    <div data-role="footer" data-theme='a'>
+        <h3>Copyright 2022 by Joe Glass , Kimiya Hassani</h3>
     </div>
 </div>
 
@@ -99,8 +101,8 @@
 <div data-role="page" id="list">
   
     <!-- header -->
-    <div data-role="header" data-theme='b'>
-        <div data-role="navbar" data-theme='b'>
+    <div data-role="header" data-theme='a'>
+        <div data-role="navbar" data-theme='a'>
             <ul>
                 <li><a href="#home">Home Page</a></li>
                 <li><a href="#add">Add Movie </a></li>
@@ -113,25 +115,15 @@
 
 
     <!-- content -->
-    <div data-role="content" data-theme='e'>
-<label for = "movieTitle"> Title of Movie</label>
-<input type ="Text" id = "movieTitle">
-&nbsp;
-<lable for ="year"> Year</lable>
-<input type = "text" id = "year">
-&nbsp;
-<lable for = "gender">Gender</lable>
-<input type ="text" id= "gender">
-
-    
+    <div data-role="content" data-theme='a'>
         <ul id="myList"></ul>
     </div>
 
 
     
     <!-- notes footer -->
-    <div data-role="footer" data-theme='b'>
-        <h3>Copyrigtht 2022 by Joe Glass , Kimiya Hassani</h3>
+    <div data-role="footer" data-theme='a'>
+        <h3>Copyright 2022 by Joe Glass , Kimiya Hassani</h3>
     </div>
 </div>
 
